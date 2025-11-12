@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import heroImg from "../../public/assets/hero.png";
 
 import styles from "@/styles/Home.module.css";
 
@@ -7,31 +8,29 @@ import styles from "@/styles/Home.module.css";
 
 export default function Home() {
   return (
-    <>
-<<<<<<< HEAD
+
+    <div className = {styles.container}>
+
     <Head>
     <title>Tarefas+ |  Organnize suas tarefas de forma fácil</title>
-
     </Head>
-    <div>
 
-
-    <h1>Meu projeto</h1>
-
+    <main className = {styles.main}>
+    <div className = {styles.logoContent}>
+    <Image 
+    className ={styles.hero} 
+    alt="Logo Tarefas+" 
+    src={heroImg}
+    priority
+    />
 
     </div>
-=======
-      <Head>
-        <title>Tarefas+ |  Organnize suas tarefas de forma fácil</title>
-        
-      </Head>
-      <div>
-        <h1>Meu projeto</h1>
 
+    <h1>
+    Sistema feito para você organizar seus estudos e tarefas
+    </h1>
 
-
-      </div>
->>>>>>> 701d7d7d8891ac980b2597deabf86a2a8bfd9243
-    </>
+    </main>
+    </div>
   );
 }
