@@ -48,3 +48,35 @@ justify-content: center;
 .box:hover{
   transform: scale(1.08);
 }
+
+
+@media screen and (max-width: 580px){
+  .hero{max-width: 80%;}
+
+  .title{
+    font-size: 24px;
+
+  }
+
+  .infoContent{
+    flex-direction: column;
+
+  }
+  .box{
+  width: 80%;
+  margin-bottom: 14px;
+  text-align: center;
+
+  }
+  .hero{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    object-fit: contain ;
+    padding-left: 100px;
+
+  }
+
+
+}
