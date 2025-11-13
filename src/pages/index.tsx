@@ -27,7 +27,7 @@ export default function Home() {
     </div>
 
     <h1>
-    Sistema feito para você organizar seus estudos e tarefas
+    Sistema feito para você organizar <br /> seus estudos e tarefas
     </h1>
 
     </main>
