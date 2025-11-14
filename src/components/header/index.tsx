@@ -12,7 +12,7 @@ export function Header() {
           Tarefas<span>+</span>
           </h1>
          </Link>
-         <Link href="/dashboard">Meu Painel</Link>
+         <Link href="/dashboard" className={styles.link}>Meu Painel</Link>
 
         </nav>
 
