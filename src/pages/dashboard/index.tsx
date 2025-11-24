@@ -10,7 +10,19 @@ export default function Dashboard() {
       <Head>
         <title>Meu painel de tarefas</title>
       </Head>
-      <h1>Pagina Painel</h1>
+      <main className={styles.main}>
+        <section className={styles.content}>
+          <div className = {styles.contentForm}>
+            <h1 className = {styles.title}>Qual sua tarefa?</h1>
+            <form>
+              
+              
+              
+            </form>
+            
+          </div>
+        </section>       
+      </main> 
     </div>
 
 
@@ -25,7 +37,7 @@ export const getServerSideProps : GetServerSideProps = async ({ req }) => {
     //se não tem usuário, vamos redirecionar para o /
     return {
       redirect: {
-        destination: '/',
+        destination:'/',
         permanent: false,
       },
     };
